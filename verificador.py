@@ -1,11 +1,11 @@
 import sys
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python verificador.py <file1>")
+    if len(sys.argv) < 3:
+        print("Usage: python verificador.py <file1> <file2>")
         sys.exit(1)
     input_file = sys.argv[1]
-    decompressed_file = "descomprimido-elmejorprofesor.txt"
+    decompressed_file = sys.argv[2]
 
     with open(input_file, "r", encoding="ISO-8859-1") as f:
         original_data = f.read()

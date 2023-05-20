@@ -1,7 +1,7 @@
 import heapq
 import os
 import time
-
+import sys
 class Nodo:
     def __init__(self, char, freq):
         self.char = char
@@ -65,6 +65,6 @@ def descomprimir(input_path, output_path):
         print(f'Time descompresor: {end_time - start_time}')
 
 if __name__ == '__main__':
-    input_path = "comprimido.elmejorprofesor"
+    input_path = sys.argv[1]
     output_path = "descomprimido-elmejorprofesor.txt"
     descomprimir(input_path, output_path)
